@@ -1,219 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey</title>
+    <script src="https://kit.fontawesome.com/ef50f363dc.js" crossorigin="anonymous"></script>
 
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./assets/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="font-manrope" style="background-color: white;  ">
     <!-- header section -->
-    <header class="container mx-auto" >
+    <header class="container mx-auto">
         <div class="navbar ">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-yellow-50 rounded-box w-52 text-black">
+                        <li><a>Home</a></li>
+                        <li><a>about</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-yellow-50 rounded-box w-52 text-black">
+                <a class="btn btn-ghost text-black  text-4xl">Hockey</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
                     <li><a>Home</a></li>
                     <li><a>about</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
                 </ul>
-              </div>
-              <a class="btn btn-ghost text-black  text-4xl">Hockey</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>about</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
             </div>
             <div class="navbar-end">
                 <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>
-              <a class="btn bg-red-500 text-white text-xl ">Get Ticket</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a class="btn bg-red-500 text-white text-xl ">Get Ticket</a>
             </div>
-          </div>
+        </div>
 
     </header>
     <main>
         <!-- banner section -->
-        <section class="flex justify-center items-center  " >
+        <section class="flex justify-center items-center  ">
             <div class="flex justify-center items-center">
                 <section class="lg:max-w-3xl relative">
-                  <div class="carousel rounded-2xl w-fit mx-auto relative">
-                    <!-- Slide 1 -->
-                    <div id="slide1" class="carousel-item relative w-full">
-                      <img src="./assets/1.png" class="w-full" />
-                      
-                      <!-- Text banner at the bottom for large devices -->
-                      <div class="hidden lg:block absolute flex-col bottom-3 m-10 left-8 right-0 bg-black text-white p-4 text-center">
-                       <h2 class="text-3xl" >Meet all the heroes from the field</h2>
-                       <p>
-                        Hockey heroes skate onto the icy arena, their skillful maneuvers echoing the thunderous cheers of fans. With swift puck-handling and precise teamwork, these heroes dominate the rink, embodying grit and determination. 
-                       </p>
-                      </div>
-              
-                      <div class="absolute align-bottom flex transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a> 
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-              
-                    <!-- Slide 2 -->
-                    <div id="slide2" class="carousel-item relative w-full">
-                      <img src="./assets/2.png" class="w-full" />
-                      
-                      <div class="hidden lg:block absolute flex-col bottom-3 m-10 left-8 right-0 bg-black text-white p-4 text-center">
-                        <h2 class="text-3xl" >Meet all the heroes from the field</h2>
+                    <div class="carousel rounded-2xl w-fit mx-auto relative">
+                        <!-- Slide 1 -->
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="./assets/1.png" class="w-full" />
+
+                            <!-- Text banner at the bottom for large devices -->
+                            <div
+                                class="hidden lg:block absolute flex-col bottom-3 m-10 left-8 right-0 bg-black text-white p-4 text-center">
+                                <h2 class="text-3xl">Meet all the heroes from the field</h2>
+                                <p>
+                                    Hockey heroes skate onto the icy arena, their skillful maneuvers echoing the
+                                    thunderous cheers of fans. With swift puck-handling and precise teamwork, these
+                                    heroes dominate the rink, embodying grit and determination.
+                                </p>
+                            </div>
+
+                            <div class="absolute align-bottom flex transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="./assets/jr.png" class="w-full" />
+
+                            <div
+                                class="hidden lg:block absolute flex-col bottom-3 m-10 left-8 right-0 bg-black text-white p-4 text-center">
+                                <h2 class="text-3xl">Meet all the heroes from the field</h2>
+                                <p class="text-sm">
+                                    Hockey heroes skate onto the icy arena, their skillful maneuvers echoing the
+                                    thunderous cheers of fans. With swift puck-handling and precise teamwork, these
+                                    heroes dominate the rink, embodying grit and determination.
+                                </p>
+                            </div>
+
+                            <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block lg:hidden text-center  bg-black text-white m-10 mt-8 ">
+                        <h2 class="text-xl">Meet all the heroes from the field</h2>
                         <p class="text-sm">
-                         Hockey heroes skate onto the icy arena, their skillful maneuvers echoing the thunderous cheers of fans. With swift puck-handling and precise teamwork, these heroes dominate the rink, embodying grit and determination. 
+                            Hockey heroes skate onto the icy arena, their skillful maneuvers echoing the thunderous
+                            cheers of fans. With swift puck-handling and precise teamwork, these heroes dominate the
+                            rink, embodying grit and determination.
                         </p>
-                       </div>
-              
-                      <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a> 
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-              
-              
-                  </div>
-              
-                  <!-- Text banner at the bottom for small devices -->
-                  <div class="block lg:hidden text-center  bg-black text-white m-10 mt-8 ">
-                    <h2 class="text-xl" >Meet all the heroes from the field</h2>
-                    <p class="text-sm">
-                     Hockey heroes skate onto the icy arena, their skillful maneuvers echoing the thunderous cheers of fans. With swift puck-handling and precise teamwork, these heroes dominate the rink, embodying grit and determination. 
-                    </p>
-                </div>
+                    </div>
                 </section>
-              </div>
-              
-              
-              
+            </div>
+
+
+
 
         </section>
         <!-- Professional Hockeys Club -->
-
-    <div class="container mx-auto">
-        <div style="text-align: center; margin: 20px auto">
-          <p class="font-extrabold text-4xl text-black ;">Professional Hockeys Club</p>
-          <p class="text-black ">
-            Hockey is a fast-paced sport played by two teams of 11 players each.
-            The objective is to shoot a small rubber puck into the opposing team's
-            net using a long-handled
-          </p>
-        </div>
-        <hr style="width: 80%;padding: 20px;" class="mx-auto"  />
-        
-  
-        <div class="grid grid-cols-1 md:grid-cols-4 container">
-          <div class="nested-div mx-auto">
-            <img src="./assets/87.jpg" alt="Player 1" />
-            <h3 style="text-align: center;">Player 1</h3>
-            <p style="text-align: center;">Description about Player 1.</p>
-          </div>
-  
-          <div class="nested-div mx-auto">
-            <img src="./assets/95.jpg" alt="Player 2" class="mx-auto" />
-            <h3 style="text-align: center;"">Player 2</h3>
-            <p style="text-align: center;">Description about Player 2.</p>
-          </div>
-  
-          <div class="nested-div mx-auto">
-            <img src="./assets/90.jpg" alt="Player 3" class="mx-auto" />
-            <h3 style="text-align: center;">Player 3</h3>
-            <p style="text-align: center;">Description about Player 3.</p>
-          </div>
-  
-          <div class="nested-div mx-auto">
-            <img src="./assets/80.jpg" alt="Player 4" class="mx-auto" />
-            <h3 style="text-align: center;">Player 4</h3>
-            <p style="text-align: center;">Description about Player 4.</p>
-          </div>
-        </div>
-      </div>
-  
-      <hr style="width: 80%;padding: 20px;" class="mx-auto"  />
         <section>
+            <div class="container mx-auto">
+                <div class="text-center my-8">
+                    <p class="font-extrabold text-4xl text-black">Professional Hockey Club</p>
+                    <p class="text-black">
+                        Fast-paced team sport.
+                        Shoot puck in net.
+                        Exciting, skilled, challenging.
+                    </p>
+                </div>
+                <hr class="w-4/5 mx-auto my-8">
+            
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 container">
+                    <div class="nested-div mx-auto text-center">
+                        <img src="./assets/87.jpg" alt="Player 1" class="mx-auto mb-4 rounded-full">
+                        <h3 class="font-bold text-lg text-black">Prayer Facility</h3>
+                        <p>Spiritual, quiet, peaceful.</p>
+                    </div>
+            
+                    <div class="nested-div mx-auto text-center">
+                        <img src="./assets/95.jpg" alt="Player 2" class="mx-auto mb-4 rounded-full">
+                        <h3 class="font-bold text-lg text-black">Experienced Coach</h3>
+                        <p> Wise, skilled, mentor.</p>
+                    </div>
+            
+                    <div class="nested-div mx-auto text-center">
+                        <img src="./assets/90.jpg" alt="Player 3" class="mx-auto mb-4 rounded-full">
+                        <h3 class="font-bold text-lg text-black">Senior Player</h3>
+                        <p> Veteran, skilled, leader.</p>
+                    </div>
+            
+                    <div class="nested-div mx-auto text-center">
+                        <img src="./assets/80.jpg" alt="Player 4" class="mx-auto mb-4 rounded-full">
+                        <h3 class="font-bold text-lg text-black">Training Ground</h3>
+                        <p> Turf, practice, development.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <hr style="width: 80%;padding: 20px;" class="mx-auto" />
+
 
         </section>
+
+
+
         <!-- program section -->
         <section>
+            <div class="container mx-auto p-4">
+                <div class="text-center my-8">
+                    <p class="font-extrabold text-4xl text-black">Program Sections</p>
+                    <p class="text-black">
+                        Hockey is a fast-paced sport played by two teams of 11 players each.
+                        The objective is to shoot a small rubber puck into the opposing team's
+                        net using a long-handled stick.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="card h-96 rounded-lg bg-no-repeat bg-cover flex flex-col justify-center"
+                        style="background-image: url('./assets/jr.png')">
+                        <div class="card-body p-4 text-white">
+                            <h2 class="text-xl font-bold">Junior Program</h2>
+                            <p>
+                                The Junior Program is designed for young enthusiasts who are eager to learn and
+                                excel in the exciting sport of hockey. Join us for a fun and skill-building experience!
+                            </p>
+                            <div class="card-actions mt-2">
+                                <button class="btn bg-red-700 text-white font-manrope">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card h-96 rounded-lg bg-no-repeat bg-cover flex flex-col justify-center"
+                        style="background-image: url('./assets/teen.png')">
+                        <div class="card-body p-4 text-white">
+                            <h2 class="text-xl font-bold">Teenager Programs</h2>
+                            <p>
+                                Our Teenager Programs cater to the unique needs and interests of adolescents
+                                looking to enhance their hockey skills. Join us for an exciting journey on the ice!
+                            </p>
+                            <div class="card-actions mt-2">
+                                <button class="btn bg-red-700 text-white font-manrope">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card h-96 rounded-lg bg-no-repeat bg-cover mt-4 md:mt-2 flex flex-col justify-center"
+                    style="background-image: url('./assets/pro.png')">
+                    <div class="card-body p-4 text-white">
+                        <h2 class="text-xl font-bold">Professional Program</h2>
+                        <p>
+                            The Professional Program is tailored for advanced players aspiring to compete at
+                            the highest levels of the sport. Elevate your game with our elite training and coaching.
+                        </p>
+                        <div class="card-actions mt-2">
+                            <button class="btn bg-red-700 text-white font-manrope">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </section>
+
+
+
+        <section>
+
         <!-- product section -->
-        <section>
+        <div class=" container mx-auto text-black text-center my-8">
+            <p class="font-extrabold text-4xl font-manrope text-black ">Our New Products</p>
+            <p class="text-black">
+                Hockey is a fast-paced sport played by two teams of 11 players each. The
+                objective is to shoot a small rubber puck into the opposing team's net
+                using a long-handled stick.
+            </p>
+        </div>
+        
+<div class="container mx-auto flex justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 m-10 md:m-0">
+
+                <div style="padding: 5px 0; width: 500px;margin: 10px;"
+                    class="flex border-solid border-2 border-sky-500 rounded-md ">
+                    <img src="./assets/5.png" alt="" />
+                    <div style="padding-top: 20px">
+                        <div style="padding: 0">
+                            <ul class="flex">
+                                <li style="padding: 10px;"><i class=" text-orange-700 fa-regular fa-star"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-eye"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <p style="padding-left: 10px">Letterman Jacket</p>
+                        <div style="margin-left: 0px; text-align: left" class="flex">
+                            <p style="color: red;padding: 10px;"><b>Price - $22.00</b></p>
+                            <p style="padding: 10px;">Delivery fee:Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 5px 0; width: 500px ;margin:10px"
+                    class="flex border-solid border-2 border-sky-500 rounded-md ">
+                    <img src="./assets/6.png" alt="" />
+                    <div style="padding-top: 20px">
+                        <div style="padding: 0">
+                            <ul class="flex">
+                                <li style="padding: 10px;"><i class=" text-orange-700 fa-regular fa-star"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-eye"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <p style="padding-left: 10px">Eagle Ball</p>
+                        <div style="margin-left: 0px; text-align: left" class="flex">
+                            <p style="color: red;padding: 10px;"><b>Price - $22.00</b></p>
+                            <p style="padding: 10px;">Delivery fee:Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 5px 0; width: 500px;margin: 10px;"
+                    class="flex border-solid border-2 border-sky-500 rounded-md ">
+                    <img src="./assets/7.png" alt="" />
+                    <div style="padding-top: 20px">
+                        <div style="padding: 0">
+                            <ul class="flex">
+                                <li style="padding: 10px;"><i class=" text-orange-700 fa-regular fa-star"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-eye"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <p style="padding-left: 10px">Caps</p>
+                        <div style="margin-left: 0px; text-align: left" class="flex">
+                            <p style="color: red;padding: 10px;"><b>Price - $22.00</b></p>
+                            <p style="padding: 10px;">Delivery fee:Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 5px 0; width: 500px ;margin:10px"
+                    class="flex border-solid border-2 border-sky-500 rounded-md ">
+                    <img src="./assets/8.png" alt="" />
+                    <div style="padding-top: 20px">
+                        <div style="padding: 0">
+                            <ul class="flex">
+                                <li style="padding: 10px;"><i class=" text-orange-700 fa-regular fa-star"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-eye"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <p style="padding-left: 10px">Jersey</p>
+                        <div style="margin-left: 0px; text-align: left" class="flex">
+                            <p style="color: red;padding: 10px;"><b>Price - $22.00</b></p>
+                            <p style="padding: 10px;">Delivery fee:Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 5px 0; width: 500px;margin: 10px;"
+                    class="flex border-solid border-2 border-sky-500 rounded-md ">
+                    <img src="./assets/9.png" alt="" />
+                    <div style="padding-top: 20px">
+                        <div style="padding: 0">
+                            <ul class="flex">
+                                <li style="padding: 10px;"><i class=" text-orange-700 fa-regular fa-star"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-eye"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <p style="padding-left: 10px">Helmet</p>
+                        <div style="margin-left: 0px; text-align: left" class="flex">
+                            <p style="color: red;padding: 10px;"><b>Price - $22.00</b></p>
+                            <p style="padding: 10px;">Delivery fee:Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 5px 0; width: 500px ;margin:10px"
+                    class="flex border-solid border-2 border-sky-500 rounded-md ">
+                    <img src="./assets/10.png" alt="" />
+                    <div style="padding-top: 20px">
+                        <div style="padding: 0">
+                            <ul class="flex">
+                                <li style="padding: 10px;"><i class=" text-orange-700 fa-regular fa-star"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-eye"></i></li>
+                                <li style="padding: 10px;"><i class="fa-regular fa-heart"></i></li>
+                            </ul>
+                        </div>
+                        <p style="padding-left: 10px">Football</p>
+                        <div style="margin-left: 0px; text-align: left" class="flex">
+                            <p style="color: red;padding: 10px;"><b>Price - $22.00</b></p>
+                            <p style="padding: 10px;">Delivery fee:Free</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
         </section>
-        <!-- client section -->
-        <section>
 
-        </section>
-        <!-- touch section -->
-        <section>
+        <!-- Clients Question section  -->
 
+        <section class="container mx-auto">
+            <div class="text-center my-20 mx-auto">
+                <p class="font-extrabold text-black font-manrope text-4xl">Clients Question</p>
+                <p class=" text-black font-manrope ">
+                    How can we enhance your hockey experience? Our team of experts is dedicated
+                    to providing you with top-notch equipment and the latest insights into the
+                    game. Whether you're a seasoned player or just starting, we've got you covered
+            
+            <hr style="height: 2px; margin-bottom: 20px;width: 80%;padding: 20px;" class="mx-auto" />
+
+
+            <div style="border: 1px solid rgb(203, 200, 200); border-radius: 5px; padding: 20px 40px;margin: 10px 50px;"
+                class="flex flex-col md:flex-row">
+                <div>
+                    <img src="./assets/11.png" alt="" class="w-full h-auto m-auto" />
+                </div>
+
+                <div class="container mx-auto p-4">
+                    <div class="collapse collapse-plus  p-4">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium  text-black font-manrope ">What is our equipment?</div>
+                        <div class="collapse-content">
+                            <p>Hockey stick, ball</p>
+                        </div>
+                    </div>
+                    <hr> <!-- Horizontal rule after the first FAQ item -->
+                
+                    <div class="collapse collapse-plus  p-4">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium  text-black font-manrope ">How do I join the team?</div>
+                        <div class="collapse-content">
+                            <p>Contact us through our website or visit our office during office hours.</p>
+                        </div>
+                    </div>
+                    <hr> <!-- Horizontal rule after the second FAQ item -->
+                
+                    <div class="collapse collapse-plus  p-4">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium  text-black font-manrope ">What are the training hours?</div>
+                        <div class="collapse-content">
+                            <p>Training hours vary. Check our schedule for details.</p>
+                        </div>
+                    </div>
+                    <hr> <!-- Horizontal rule after the third FAQ item -->
+                
+                    <div class="collapse collapse-plus  p-4">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium  text-black font-manrope ">Do you provide equipment?</div>
+                        <div class="collapse-content">
+                            <p>We provide basic equipment for new members. Advanced equipment can be purchased or rented.</p>
+                        </div>
+                    </div>
+                    <hr> <!-- Horizontal rule after the fourth FAQ item -->
+                
+                    <div class="collapse collapse-plus  p-4">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium  text-black font-manrope ">Is there an age limit?</div>
+                        <div class="collapse-content">
+                            <p>Our programs are open to participants of all ages.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </section>
+
+        <div class="container mx-auto max-w-2xl mb-10">
+            <div class="mx-5 md:mx-0 my-10">
+                <h3 class="font-extrabold text-4xl text-black text-center">Get In Touch</h3>
+                <p class="text-center justify-normal text-black">
+                    Hockey is a fast-paced sport played by two teams of 11 players each.
+                    The objective is to shoot a small rubber puck into the opposing team's
+                </p>
+            </div>
+        
+            <div class="border border-gray-500 flex flex-col md:flex-row mx-auto">
+                <div class="flex flex-col">
+                    <div class="bg-green-300 m-4 p-4 rounded">
+                        <img src="./assets/phone.png" alt="" class="mx-auto mb-2" />
+                        <b>Phone</b>
+                        <p class="text-black">01632866164</p>
+                    </div>
+                    <div class="bg-yellow-300 m-4 p-4 rounded">
+                        <img src="./assets/email.png" alt="" class="mx-auto mb-2" />
+                        <h5>Email</h5>
+                        <p class="text-black">nafiulmiraj@gmail.com</p>
+                    </div>
+                    <div class="bg-red-300 m-4 p-4 rounded">
+                        <img src="./assets/maps.png" alt="" class="mx-auto mb-2" />
+                        <h5>Address</h5>
+                        <p class="text-black">Tangail, Bangladesh</p>
+                    </div>
+                </div>
+        
+                <div style="justify-content: space-between">
+                    <div>
+                      <div style="display: flex">
+                        <div style="margin: 10px;">
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text">Your name</span>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="name"
+                              class="input bg-gray-200 input-bordered w-full max-w-xs" />
+                          </label>
+                        </div>
+                        <div style="margin: 10px;">
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text"> Your email</span>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="email"
+                              class="input bg-gray-200 input-bordered w-full max-w-xs" />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div style="display: flex">
+                        <div style="margin: 10px;">
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text">Subject</span>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="subject"
+                              class="input bg-gray-200 input-bordered w-full max-w-xs" />
+                          </label>
+                        </div>
+                        <div style="margin: 10px;">
+                          <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text">Phone number</span>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="phone number"
+                              class="input bg-gray-200 input-bordered w-full max-w-xs" />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div style="justify-content: center">
+                      <label class="form-control">
+                        <div class="label">
+                          <span class="label-text">Message</span>
+                        </div>
+                        <textarea
+                          style="width: 450px"
+                          class="textarea bg-gray-200 textarea-bordered h-24"
+                          placeholder="message"></textarea>
+                      </label>
+                      <button
+                        style="width: 450px; margin-top: 10px"
+                        class="btn bg-red-600">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+
+        
+
+        <!-- social media section  -->
+
+        <div class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+            <h5>Social Media</h5>
+            <div>
+                <div class="grid grid-flow-col gap-4">
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
     </main>
 
-  <!-- footer section  -->
-    <footer class="bg-info-content text-neutral-content">
-        <div
-          class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-7 py-[100px]">
-          <div class="col-span-2">
-            <svg
-              width="50"
-              height="50"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              class="fill-current">
-              <path
-                d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-            </svg>
-            <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
-          </div>
-  
-          <div class="col-span-2 flex gap-7">
-            <nav>
-              <header class="footer-title">Services</header>
-              <a class="link link-hover">Branding</a>
-              <a class="link link-hover">Design</a>
-              <a class="link link-hover">Marketing</a>
-              <a class="link link-hover">Advertisement</a>
+    <!-- footer section  -->
+    <footer class="bg-black text-white">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-7 py-12">
+            <div class="col-span-2 md:col-span-1">
+                <p class="text-3xl font-bold mb-2">Get In Touch</p>
+                <p class="mb-2">Get in touch with us to inquire about our products or get information about hockey.</p>
+            </div>
+    
+            <div class="col-span-2 md:col-span-3 flex flex-col md:flex-row gap-7 md:justify-center">
+                <nav class="mb-4 md:mb-0">
+                    <h2 class="footer-title">Company</h2>
+                    <ul class="list-none">
+                        <li><a href="#" class="link link-hover mb-2">About us</a></li>
+                        <li><a href="#" class="link link-hover mb-2">Leadership</a></li>
+                        <li><a href="#" class="link link-hover mb-2">Careers</a></li>
+                        <li><a href="#" class="link link-hover mb-2">Articles</a></li>
+                    </ul>
+                </nav>
+                <nav class="mb-4 md:mb-0">
+                    <h2 class="footer-title">Support</h2>
+                    <ul class="list-none">
+                        <li><a href="#" class="link link-hover mb-2">Help Center</a></li>
+                        <li><a href="#" class="link link-hover mb-2">FAQ</a></li>
+                        <li><a href="#" class="link link-hover mb-2">Ticket Support</a></li>
+                        <li><a href="#" class="link link-hover mb-2">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <nav class="col-span-2 md:col-span-1 text-center md:text-left">
+                <h2 class="footer-title">Services</h2>
+                <ul class="list-none">
+                    <li><a href="#" class="link link-hover mb-2">Academy</a></li>
+                    <li><a href="#" class="link link-hover mb-2">Group Lesson</a></li>
+                    <li><a href="#" class="link link-hover mb-2">Private Lesson</a></li>
+                    <li><a href="#" class="link link-hover mb-2">Hockey for Kids</a></li>
+                    <li><a href="#" class="link link-hover mb-2">Hockey for Adults</a></li>
+                </ul>
             </nav>
-  
-            <nav>
-              <header class="footer-title">Company</header>
-              <a class="link link-hover">About us</a>
-              <a class="link link-hover">Contact</a>
-              <a class="link link-hover">Jobs</a>
-              <a class="link link-hover">Press kit</a>
-            </nav>
-          </div>
-  
-  <nav>
-            <header class="footer-title">Legal</header>
-            <a class="link link-hover">Terms of use</a>
-            <a class="link link-hover">Privacy policy</a>
-            <a class="link link-hover">Cookie policy</a>
-          </nav>
         </div>
-      </footer>
+    </footer>
+    
+    
+    
+    
 </body>
+
 </html>
